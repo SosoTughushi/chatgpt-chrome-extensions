@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "OpenAI Chat Logger",
+    "version": "1.0",
+    "permissions": ["activeTab", "https://chat.openai.com/*", "storage"],
+    "content_scripts": [
+      {
+        "matches": ["https://chat.openai.com/*"],
+        "js": [ "jquery-3.7.0.min.js", "content.js"]
+      }
+    ],
+    "options_page": "options.html"
+}
