@@ -2,11 +2,16 @@
 <html>
 <body>
     <form id="settings-form">
-        <label for="maxTextSize">Max text size:</label><br>
-        <input type="text" id="maxTextSize" name="maxTextSize"><br>
+        <div>
+            <label for="maxTextSize">Max text size:</label><br>
+            <input type="text" id="maxTextSize" name="maxTextSize"><br>
+        </div>
+        <div>
+            <label for="trimmedTextTemplate">Trimmed Text Template:</label><br>
+            <textarea id="trimmedTextTemplate" name="trimmedTextTemplate"></textarea><br>
+        </div>
         <input type="submit" value="Save">
     </form>
-
     <script src="options.js"></script>
 </body>
 </html>
